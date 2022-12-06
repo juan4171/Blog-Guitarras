@@ -40,15 +40,12 @@ footer{
     background-color: seagreen;
     padding: 3rem;
     color: #fff;
-}
-footer section{
-    float: right;
-}
-footer p{
-    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 footer a{
-    margin: 0rem 0rem 0rem 1rem ;
     transition: color 0.3s ease;
     color: #fff;
     text-decoration: none;
