@@ -1,3 +1,4 @@
+/* configuraciones de generales */
 *{
     box-sizing: border-box;
 }
@@ -9,55 +10,70 @@ body{
     margin: 0;
     background-color: #efefef;
 }
-header{
-    background-color: seagreen;
-    color: white;
-    padding: 4vh;
+h1{
+    font-size: 2.5em;
+    margin: 15px;
 }
-header h1{
-    font-size: 4rem;
-    text-align: center;
-    margin: 0;
+h2{
+    font-size: 1.75em;
+    margin: 10px;
 }
+p{
+    font-size: 1.1em;
+    margin: 10px;
+}
+a{ 
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: #2E2E2E;
+}
+
 .container{
     max-width: 1400px;
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: seagreen;
+    color: white;
+    padding: 10px;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 section article{
     transition: box-shadow 0.3s ease;
     background-color: white;
-    margin: 1rem 0;
-    border-radius: 0.5rem;
-    padding: 0.25rem 0rem;
+    margin: 17px 0px;
+    border-radius: 20px;
+    padding: 10px;
 }
 section article:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
 }
-section article h2, section article p{
-    margin: 1rem;
-}
 img{
-    width: 75%;
+    width: 70%;
     display: block; /* importante el display block para que el margin auto centre */
     margin: auto;
 }
+/* configuraciones de footer */
 footer{
-    background-color: seagreen;
-    padding: 2vh;
-    color: white;
+    background-color: seagreen; 
+}
+footer .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-footer a{
-    transition: color 0.3s ease;
-    color: white;
-    text-decoration: none;
+    padding: 15px 30px;
     text-align: center;
-    font-weight: bold;
-}
-footer a:hover{
-    color: black;
 }
